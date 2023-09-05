@@ -9,7 +9,7 @@ import down from '@/public/images/icon-down.svg'
 
 export default function FollowersDisplay( params : overviewToday): JSX.Element {
 
-    const smallTile = (
+    return (
         <div className={Styles.small_tile}>
             <div>
                 <h1 className={Styles.param_icon}>
@@ -26,6 +26,4 @@ export default function FollowersDisplay( params : overviewToday): JSX.Element {
             </div>
         </div>
     )
-
-    return smallTile
 }

@@ -1,8 +1,8 @@
 import DarkToggle from './DarkToggle'
 
-export default function Head(): JSX.Element {
+export default function Nav(): JSX.Element {
   return (
-    <head>
+    <nav>
       <div>
         <h1>
           Social Media Dashboard
@@ -12,6 +12,6 @@ export default function Head(): JSX.Element {
       <div className="dark-mode-container">
         <DarkToggle />
       </div>
-    </head>
+    </nav>
   )
 }
