@@ -1,14 +1,13 @@
-:root {
+# Front-end Style Guide
 
-}
+## Layout
 
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
+The designs were created to the following widths:
 
-/* ## Colors
+- Mobile: 375px
+- Desktop: 1440px
+
+## Colors
 
 ### Primary
 
@@ -55,4 +54,4 @@
 ### Font
 
 - Family: [Inter](https://fonts.google.com/specimen/Inter)
-- Weights: 400, 700 */
+- Weights: 400, 700

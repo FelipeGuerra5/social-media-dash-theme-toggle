@@ -1,0 +1,96 @@
+{
+    "tiles": {
+        "displayTiles": [
+            {
+                "network": "facebook",
+                "alias": "@nathanf",
+                "amount": "1987",
+                "label": "Followers",
+                "difference": 12,
+                "growing": true
+            },
+            {
+                "network": "twitter",
+                "alias": "@nathanf",
+                "amount": "1044",
+                "label": "Followers",
+                "difference": 99,
+                "growing": true
+            },
+            {
+                "network": "instagram",
+                "alias": "@realnathanf",
+                "amount": "11K",
+                "label": "Followers",
+                "difference": 1099,
+                "growing": true
+            },
+            {
+                "network": "youtube",
+                "alias": "Nathan F.",
+                "amount": "8239",
+                "label": "Subscribers",
+                "difference": 144,
+                "growing": false
+            }
+        ],
+        "overviewTiles": [
+            {
+                "network": "facebook",
+                "parameter": "Page Views",
+                "amount": "87",
+                "percentile": 3,
+                "growing": true
+            },
+            {
+                "network": "facebook",
+                "parameter": "Likes",
+                "amount": "52",
+                "percentile": 2,
+                "growing": false
+            },
+            {
+                "network": "instagram",
+                "parameter": "Likes",
+                "amount": "5462",
+                "percentile": 2257,
+                "growing": true
+            },
+            {
+                "network": "instagram",
+                "parameter": "Profile Views",
+                "amount": "52k",
+                "percentile": 1375,
+                "growing": true
+            },
+            {
+                "network": "twitter",
+                "parameter": "Retweets",
+                "amount": "117",
+                "percentile": 303,
+                "growing": true
+            },
+            {
+                "network": "twitter",
+                "parameter": "Likes",
+                "amount": "507",
+                "percentile": 553,
+                "growing": true
+            },
+            {
+                "network": "youtube",
+                "parameter": "Likes",
+                "amount": "107",
+                "percentile": 19,
+                "growing": false
+            },
+            {
+                "network": "youtube",
+                "parameter": "Total Views",
+                "amount": "1407",
+                "percentile": 12,
+                "growing": false
+            }
+        ]
+    }
+}
