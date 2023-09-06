@@ -1,8 +1,5 @@
+import Image from 'next/image'
 import Styles from '@/app/page.module.css'
-import youtube from '@/public/images/icon-youtube.svg'
-import instagram from '@/public/images/icon-instagram.svg'
-import twitter from '@/public/images/icon-twitter.svg'
-import facebook from '@/public/images/icon-facebook.svg'
 import Up from '@/public/images/icon-up.svg'
 import Down from '@/public/images/icon-down.svg'
 
@@ -12,29 +9,25 @@ type Props = {
 
 export default function FollowersDisplay({ params }: Props): JSX.Element {
 
-    const percentileText = 'testing'
-
-    // const growing = params.growing ? <up /> : down
-
     return (
-        <div>
-            <div>
-                <div className={params.network}></div>
+        <div className={Styles.followers_tile} key={params.network + "-" + params.amount}>
+            <div className={params.network}>
+                <Image src={params.networkIcon} width={15} height={15} alt={params.network} />
                 <p>{params.alias}</p>
             </div>
+
             <div>
                 <div >{params.amount}</div>
                 <h1>{params.label}</h1>
             </div>
 
-            <p
-                className={
+            <p className={params.growing ? Styles.growing_up : Styles.growing_down}>
+                {
                     params.growing ?
-                        Styles.growing_up :
-                        Styles.growing_down
-                }>
-                {percentileText}
-                <Up />
+                        <Image src={Up} width={10} height={10} alt={`Picture for growing`}></Image> :
+                        <Image src={Down} width={10} height={10} alt={`Picture for decreasing`}></Image>
+                }
+                {params.difference}
             </p>
         </div>
     )

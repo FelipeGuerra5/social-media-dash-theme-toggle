@@ -1,5 +1,6 @@
 type overviewToday = {
     network: string,
+    networkIcon: string,
     parameter: string,
     amount: string,
     percentile: number,
@@ -8,6 +9,7 @@ type overviewToday = {
 
 type followersDisplay = {
     network: string,
+    networkIcon: string,
     alias: string,
     amount: string,
     label: string,

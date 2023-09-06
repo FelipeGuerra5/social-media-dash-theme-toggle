@@ -3,6 +3,7 @@
         "displayTiles": [
             {
                 "network": "facebook",
+                "networkIcon": "/images/icon-facebook.svg",
                 "alias": "@nathanf",
                 "amount": "1987",
                 "label": "Followers",
@@ -11,6 +12,7 @@
             },
             {
                 "network": "twitter",
+                "networkIcon": "/images/icon-facebook.svg",
                 "alias": "@nathanf",
                 "amount": "1044",
                 "label": "Followers",
@@ -19,6 +21,7 @@
             },
             {
                 "network": "instagram",
+                "networkIcon": "/images/icon-instagram.svg",
                 "alias": "@realnathanf",
                 "amount": "11K",
                 "label": "Followers",
@@ -27,6 +30,7 @@
             },
             {
                 "network": "youtube",
+                "networkIcon": "/images/icon-youtube.svg",
                 "alias": "Nathan F.",
                 "amount": "8239",
                 "label": "Subscribers",
@@ -37,6 +41,7 @@
         "overviewTiles": [
             {
                 "network": "facebook",
+                "networkIcon": "/images/icon-facebook.svg",
                 "parameter": "Page Views",
                 "amount": "87",
                 "percentile": 3,
@@ -44,6 +49,7 @@
             },
             {
                 "network": "facebook",
+                "networkIcon": "/images/icon-facebook.svg",
                 "parameter": "Likes",
                 "amount": "52",
                 "percentile": 2,
@@ -51,6 +57,7 @@
             },
             {
                 "network": "instagram",
+                "networkIcon": "/images/icon-instagram.svg",
                 "parameter": "Likes",
                 "amount": "5462",
                 "percentile": 2257,
@@ -58,6 +65,7 @@
             },
             {
                 "network": "instagram",
+                "networkIcon": "/images/icon-instagram.svg",
                 "parameter": "Profile Views",
                 "amount": "52k",
                 "percentile": 1375,
@@ -65,6 +73,7 @@
             },
             {
                 "network": "twitter",
+                "networkIcon": "/images/icon-twitter.svg",
                 "parameter": "Retweets",
                 "amount": "117",
                 "percentile": 303,
@@ -72,6 +81,7 @@
             },
             {
                 "network": "twitter",
+                "networkIcon": "/images/icon-twitter.svg",
                 "parameter": "Likes",
                 "amount": "507",
                 "percentile": 553,
@@ -79,6 +89,7 @@
             },
             {
                 "network": "youtube",
+                "networkIcon": "/images/icon-youtube.svg",
                 "parameter": "Likes",
                 "amount": "107",
                 "percentile": 19,
@@ -86,6 +97,7 @@
             },
             {
                 "network": "youtube",
+                "networkIcon": "/images/icon-youtube.svg",
                 "parameter": "Total Views",
                 "amount": "1407",
                 "percentile": 12,
