@@ -1,0 +1,98 @@
+.main {
+    width: 80%;
+    height: 90%;
+}
+
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.followers_tiles_container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.followers_tile {
+    width: var(--tile-width);
+    height: var(--followers-tile-height);
+    border-top-width: 5px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+
+}
+
+/* TODO - Set the borders of the tiles to the right color */
+#facebook {
+    border-top-color: blue;
+}
+
+#twitter {
+    border-top-color: blue;
+}
+
+#instagram {
+    border-top-color: blue;
+}
+
+#youtube {
+    border-top-color: blue;
+}
+
+.followers_tile_title {
+    /* width: 70%; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.followers_tile_title p {
+    margin-left: 5px;
+    font-weight: bolder;
+    font-size: small;
+}
+
+.followers_tile_amount h1 {
+    font-size: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+.followers_tile_amount h2 {
+    font-size: medium;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+}
+
+.growing_up {
+    font-weight: bolder;
+    font-size: small;
+}
+
+.growing_down {
+    font-weight: bolder;
+    font-size: small;
+
+}
+
+.overview_tiles_container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+
+.overview_tile {
+    width: var(--tile-width);
+    height: var(--overview-tile-height);
+    border-top: 2px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}

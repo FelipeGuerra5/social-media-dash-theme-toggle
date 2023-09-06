@@ -1,12 +1,25 @@
-:root {}
+:root {
+  --tile-width: 250px;
+  --followers-tile-height: 200px;
+  --overwiew-tile-height: 100px;
+}
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  
+
   /* DEVELOPMENT ONLY */
-  background-color: gray; 
+  background-color: gray;
+  border-width: 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ## Colors

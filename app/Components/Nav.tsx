@@ -1,8 +1,9 @@
+import Styles from '@/app/page.module.css'
 import DarkToggle from './DarkToggle'
 
 export default function Nav(): JSX.Element {
   return (
-    <nav>
+    <nav className={Styles.nav}>
       <div>
         <h1>
           Social Media Dashboard

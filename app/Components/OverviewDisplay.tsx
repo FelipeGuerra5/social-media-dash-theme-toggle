@@ -10,7 +10,7 @@ type Props = {
 export default function OverviewDisplay({ params }: Props): JSX.Element {
 
     return (
-        <div className={Styles.overview_tile} key={params.network + "-" + params.amount}>
+        <div className={Styles.overview_tile}>
             <div>
                 <h1 className={Styles.param_icon}>
                     {params.parameter}

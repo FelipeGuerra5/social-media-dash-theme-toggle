@@ -12,7 +12,7 @@
             },
             {
                 "network": "twitter",
-                "networkIcon": "/images/icon-facebook.svg",
+                "networkIcon": "/images/icon-twitter.svg",
                 "alias": "@nathanf",
                 "amount": "1044",
                 "label": "Followers",
