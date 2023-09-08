@@ -11,21 +11,29 @@ export default function OverviewDisplay({ params }: Props): JSX.Element {
 
     return (
         <div className={Styles.overview_tile}>
-            <div>
+            <div className={Styles.overview_tile_top}>
                 <h1 className={Styles.param_icon}>
                     {params.parameter}
-                    <Image src={params.networkIcon} width={15} height={15} alt={params.network} />
                 </h1>
+                <Image src={params.networkIcon} width={20} height={20} alt={params.network} />
             </div>
-            <div className={Styles.growing}>
+            <div className={Styles.overview_tile_today_growth}>
                 {params.amount}
-                <div>
-                    {
+                <div
+                    className={
                         params.growing ?
-                            <Image src={Up} width={10} height={10} alt={`Picture for growing`}></Image> :
-                            <Image src={Down} width={10} height={10} alt={`Picture for decreasing`}></Image>
-                    }
-                    {params.percentile}
+                            Styles.overview_growing_up :
+                            Styles.overview_growing_down
+                    }>
+                    <div>
+
+                        {
+                            params.growing ?
+                                <Image src={Up} width={8} height={8} alt={`Picture for growing`}></Image> :
+                                <Image src={Down} width={8} height={8} alt={`Picture for decreasing`}></Image>
+                        }
+                        {params.percentile}%
+                    </div>
                 </div>
             </div>
         </div>

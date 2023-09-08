@@ -19,11 +19,11 @@ export default function FollowersDisplay({ params }: Props): JSX.Element {
                 <h1>{params.amount}</h1>
                 <h2>{params.label}</h2>
             </div>
-            <p className={params.growing ? Styles.growing_up : Styles.growing_down}>
+            <p className={params.growing ? Styles.followers_growing_up : Styles.followers_growing_down}>
                 {
                     params.growing ?
-                        <Image src={Up} width={10} height={10} alt={`Picture for growing`}></Image> :
-                        <Image src={Down} width={10} height={10} alt={`Picture for decreasing`}></Image>
+                        <Image src={Up} width={8} height={8} alt={`Picture for growing`}></Image> :
+                        <Image src={Down} width={8} height={8} alt={`Picture for decreasing`}></Image>
                 }
                 {" " + params.difference}
                 Today

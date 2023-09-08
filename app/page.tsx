@@ -19,7 +19,7 @@ export default function Home() {
         }
       </div>
       <div className={styles.overview_tiles_display}>
-        <h1 className={styles.overview_Title}>Overview - Today</h1>
+        <h1 className={styles.overview_display_title}>Overview - Today</h1>
         <div className={styles.overview_tiles_container}>
 
           {

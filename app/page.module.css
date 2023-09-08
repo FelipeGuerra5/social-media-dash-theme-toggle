@@ -7,18 +7,22 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: var(--tile-margin);
+    flex-wrap: wrap;
 }
 
 .followers_tiles_container {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .followers_tile {
     width: var(--tile-width);
     height: var(--followers-tile-height);
     border-top-width: 5px;
-    margin: 15px;
+    margin: var(--tile-margin);
+    padding: var(--tile-padding);
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -51,7 +55,7 @@
 }
 
 .followers_tile_title p {
-    margin-left: 5px;
+    margin-left: 10px;
     font-weight: bolder;
     font-size: small;
 }
@@ -63,20 +67,24 @@
 }
 
 .followers_tile_amount h2 {
-    font-size: medium;
+    font-size: 13px;
     text-transform: uppercase;
-    letter-spacing: 1.5px;
+    letter-spacing: 3px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
 }
 
-.growing_up {
+.followers_growing_up {
     font-weight: bolder;
     font-size: small;
+    color: green;
 }
 
-.growing_down {
+.followers_growing_down {
     font-weight: bolder;
     font-size: small;
-
+    color: red;
 }
 
 .overview_tiles_container {
@@ -84,15 +92,72 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+}
 
+.overview_display_title {
+    margin: var(--tile-margin);
+    font-size: 23px;
 }
 
 .overview_tile {
     width: var(--tile-width);
-    height: var(--overview-tile-height);
-    border-top: 2px;
+    height: var(--overwiew-tile-height);
+    margin: var(--tile-margin);
+    padding: var(--tile-padding);
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: space-between;
     justify-content: space-around;
+}
+
+.overview_tile_top {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview_tile h1 {
+    font-size: small;
+    font-weight: 800;
+}
+
+.overview_tile_today_growth {
+    width: 100%;
+    font-size: 25px;
+    font-weight: 900;
+    display: flex;
+    justify-content: space-between;
+}
+
+.overview_growing_up {
+    font-weight: bolder;
+    font-size: small;
+    color: green;
+    display: flex;
+    align-items: flex-end;
+}
+
+.overview_growing_down {
+    font-weight: bolder;
+    font-size: small;
+    color: red;
+    display: flex;
+    align-items: flex-end;
+}
+
+.dark_theme_toggle {
+    width: 50px;
+    height: 20px;
+    border-radius: 10px;
+    padding: 1px;
+    display: flex;
+    align-items: center;
+    /* DEVELOPMENT ONLY */
+    background-color: black;
+}
+
+.dark_theme_toggle_btn {
+    height: 18px;
+    width: 18px;
+    border-radius: 50%;
 }

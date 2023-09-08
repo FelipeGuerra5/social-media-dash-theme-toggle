@@ -1,7 +1,9 @@
 :root {
   --tile-width: 250px;
   --followers-tile-height: 200px;
-  --overwiew-tile-height: 100px;
+  --overwiew-tile-height: 120px;
+  --tile-margin: 15px;
+  --tile-padding: 15px;
 }
 
 * {
