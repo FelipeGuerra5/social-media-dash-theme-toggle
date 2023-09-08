@@ -5,7 +5,7 @@ import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
-  title: 'Social Media Dash Theme Toggle',
+  title: 'Social Media DarkTheme Toggle project',
   description: 'FrontEnd Mentor project to make a social media usage Dash Baord with dark and light theme.'
 }
 
