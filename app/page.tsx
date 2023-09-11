@@ -1,6 +1,4 @@
 'use client'
-import DarkToggle from './Components/DarkToggle'
-import { useState } from 'react'
 import styles from './page.module.css'
 import Nav from './Components/Nav'
 import Data from '@/lib/data.json'
@@ -9,13 +7,11 @@ import OverviewDisplay from './Components/OverviewDisplay'
 
 export default function Home() {
 
-  const [darkmode, setDarkmode] = useState(window.localStorage.getItem('darkmode')) ?? false
-
   const data: Data = Data
 
   return (
     <main className={styles.main}>
-      <Nav params={{darkmode, setDarkmode}} />
+      <Nav />
       <div className={styles.followers_tiles_container}>
         {
           data.tiles.displayTiles.map(item => (

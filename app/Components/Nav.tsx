@@ -1,17 +1,8 @@
-import { Dispatch, SetStateAction } from 'react'
-
 import Styles from '@/app/page.module.css'
 import DarkToggle from './DarkToggle'
 
-type Props = {
-  params: {
-    darkmode: string | null,
-    setDarkmode: Dispatch<SetStateAction<string | null>>
-  }
-}
+export default function Nav(): JSX.Element {
 
-export default function Nav({ params }: Props): JSX.Element {
-  const { darkmode, setDarkmode } = params
   return (
     <nav className={Styles.nav}>
       <div>
@@ -21,7 +12,7 @@ export default function Nav({ params }: Props): JSX.Element {
         <p>Total Followers: 23,004</p>
       </div>
       <div className={Styles.darkmode_container}>
-        <DarkToggle params={{ darkmode, setDarkmode }} />
+        <DarkToggle />
       </div>
     </nav>
   )

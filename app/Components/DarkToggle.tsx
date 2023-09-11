@@ -1,21 +1,28 @@
 import Styles from '@/app/page.module.css'
-import { Dispatch, SetStateAction } from 'react'
+import { useState, useEffect } from 'react'
 
-type Props = {
-    params: {
-        darkmode: string | null,
-        setDarkmode: Dispatch<SetStateAction<string | null>>
-    }
-}
 
-export default function DarkToggle({ params }: Props): JSX.Element {
+export default function DarkToggle(): JSX.Element {
 
-    const { darkmode, setDarkmode } = params
+    const [darkMode, setDarkMode] = useState(true)
+
+    useEffect(() => {
+        darkMode ? 
+
+
+    }, [darkMode])
+
 
     return (
         <div className={Styles.dark_theme_toggle}>
             <div className={Styles.dark_theme_toggle_btn}>
-                <input type="checkbox" name="darkmode" id="darkmode" className={Styles.darkmode_checkbox} />
+                <input
+                    type="checkbox"
+                    name="darkmode"
+                    id="darkmode"
+                    className={Styles.darkmode_checkbox}
+                    onClick={() => { setDarkMode(!darkMode) }}
+                />
             </div>
         </div>
     )
