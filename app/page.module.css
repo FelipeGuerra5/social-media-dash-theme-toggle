@@ -20,35 +20,39 @@
 .followers_tile {
     width: var(--tile-width);
     height: var(--followers-tile-height);
-    border-top-width: 5px;
     margin: var(--tile-margin);
-    padding: var(--tile-padding);
-    background-color: var(--background-color);
     border-radius: 5px;
+}
+
+.followers_tile_content {
+    height: 100%;
+    width: 100%;
+    padding: var(--tile-padding);
+    margin-top: 5px;
+    background-color: var(--card-background);
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+
+
 }
 
 /* TODO - Set the borders of the tiles to the right color */
 #facebook {
-    border-top-color: var(--facebook-border-color);
+    background: var(--facebook-border-color);
 }
 
 #twitter {
-    border-top-color: var(--twitter-border-color);
+    background: var(--twitter-border-color);
 }
 
 #instagram {
-    border-color: linear-gradient(red, Blue);
-    border-left: 0;
-    border-right: 0;
-    border-bottom: 0;
+    background: var(--instagram-border-color);
 }
 
 #youtube {
-    border-top-color: var(--youtube-border-color);
+    background: var(--youtube-border-color);
 }
 
 .followers_tile_title {
@@ -62,10 +66,12 @@
     margin-left: 10px;
     font-weight: bolder;
     font-size: small;
+    color: var(--text-main);
 }
 
 .followers_tile_amount h1 {
     font-size: 50px;
+    color: var(--text-main);
     display: flex;
     justify-content: center;
 }
@@ -74,6 +80,7 @@
     font-size: 13px;
     text-transform: uppercase;
     letter-spacing: 3px;
+    color: var(--text-legend);
     display: flex;
     justify-content: center;
     font-weight: 500;
@@ -82,14 +89,25 @@
 .followers_growing_up {
     font-weight: bolder;
     font-size: small;
-    color: green;
+    color: var(--lime-green);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
 
 .followers_growing_down {
     font-weight: bolder;
     font-size: small;
-    color: red;
+    color: var(--bright-red);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
 }
+
+.growing_arrow {
+    margin-right: 3px;
+}
+
 
 .overview_tiles_container {
     display: flex;

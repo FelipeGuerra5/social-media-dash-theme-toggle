@@ -45,10 +45,10 @@
   box-sizing: border-box;
 
   /* DEVELOPMENT ONLY */
-  background-color: var(--back-color);
+  /* background-color: var(--back-color);
   border-width: 1px;
   border-color: black;
-  border-style: solid;
+  border-style: solid; */
 }
 
 body,
