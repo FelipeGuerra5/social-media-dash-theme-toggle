@@ -10,7 +10,8 @@ export default function Nav(): JSX.Element {
         </h1>
         <p>Total Followers: 23,004</p>
       </div>
-      <div className="dark-mode-container">
+      <div className={Styles.dark_mode_container}>
+        Dark Mode
         <DarkToggle />
       </div>
     </nav>
