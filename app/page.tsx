@@ -15,7 +15,7 @@ export default function Home() {
       <div className={styles.followers_tiles_container}>
         {
           data.tiles.displayTiles.map(item => (
-            <FollowersDisplay params={item} />
+            <FollowersDisplay params={item} key={item.network} />
           ))
         }
       </div>
@@ -25,7 +25,7 @@ export default function Home() {
 
           {
             data.tiles.overviewTiles.map(item => (
-              <OverviewDisplay params={item} />
+              <OverviewDisplay params={item} key={`${item.network}_${item.parameter}`} />
             ))
           }
         </div>
