@@ -51,6 +51,11 @@
     justify-content: space-around;
 }
 
+.followers_tile_content:hover {
+    background-color: var(--card-background-hover);
+    cursor: pointer;
+}
+
 /* TODO - Set the borders of the tiles to the right color */
 #facebook {
     background: var(--facebook-border-color);
@@ -147,6 +152,12 @@
     justify-content: space-around;
 }
 
+.overview_tile:hover {
+    cursor: pointer;
+    background-color: var(--card-background-hover);
+}
+
+
 .overview_tile_top {
     width: 100%;
     display: flex;
@@ -202,8 +213,7 @@
     margin-bottom: var(--tile-margin);
     display: flex;
     align-items: center;
-    background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
-    /* background: var(--toggle-background-color); */
+    background: var(--toggle-background-color);
     justify-content: var(--toggle-position);
 }
 
@@ -214,6 +224,10 @@
     border-radius: 50%;
     border-color: var(--background-color);
     background-color: var(--background-color);
+}
+
+.dark_theme_toggle_btn:hover {
+    cursor: pointer
 }
 
 .dark_theme_toggle_input {
