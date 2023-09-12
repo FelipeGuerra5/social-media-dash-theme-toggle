@@ -1,6 +1,7 @@
 .main {
     width: 74%;
     height: 90%;
+    position: relative;
 }
 
 .nav {
