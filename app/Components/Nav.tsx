@@ -6,12 +6,13 @@ export default function Nav(): JSX.Element {
   return (
     <nav className={Styles.nav}>
       <div>
-        <h1 className={Styles.followers_display_title}>
+        <h1 className={Styles.nav_title}>
           Social Media Dashboard
         </h1>
-        <p>Total Followers: 23,004</p>
+        <p className={Styles.nav_legend}>Total Followers: 23,004</p>
       </div>
-      <div className={Styles.darkmode_container}>
+      <div className={Styles.dark_mode_container}>
+        Dark Mode
         <DarkToggle />
       </div>
     </nav>

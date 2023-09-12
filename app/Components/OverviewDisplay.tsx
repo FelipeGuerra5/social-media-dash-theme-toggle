@@ -29,8 +29,20 @@ export default function OverviewDisplay({ params }: Props): JSX.Element {
 
                         {
                             params.growing ?
-                                <Image src={Up} width={8} height={8} alt={`Picture for growing`}></Image> :
-                                <Image src={Down} width={8} height={8} alt={`Picture for decreasing`}></Image>
+                                <Image
+                                    src={Up}
+                                    width={8}
+                                    height={8}
+                                    alt={`Picture for growing`}
+                                    className={Styles.growing_arrow}
+                                /> :
+                                <Image
+                                    src={Down}
+                                    width={8}
+                                    height={8}
+                                    alt={`Picture for decreasing`}
+                                    className={Styles.growing_arrow}
+                                />
                         }
                         {params.percentile}%
                     </div>

@@ -1,28 +1,28 @@
+'use client'
+
 import Styles from '@/app/page.module.css'
-import { useState, useEffect } from 'react'
+import { useTheme } from 'next-themes'
+import { useEffect, useState } from 'react'
 
 
 export default function DarkToggle(): JSX.Element {
 
-    const [darkMode, setDarkMode] = useState(true)
+    const { theme, setTheme } = useTheme()
+    const [mounted, setMounted] = useState(false)
+    const [moved, setMoved] = useState(theme === 'dark' ? true : false)
 
-    useEffect(() => {
-        darkMode ? 
+    useEffect(() => { setMounted(true), [] })
 
-
-    }, [darkMode])
-
+    if (!mounted) null
 
     return (
         <div className={Styles.dark_theme_toggle}>
-            <div className={Styles.dark_theme_toggle_btn}>
-                <input
-                    type="checkbox"
-                    name="darkmode"
-                    id="darkmode"
-                    className={Styles.darkmode_checkbox}
-                    onClick={() => { setDarkMode(!darkMode) }}
-                />
+            <div
+                className={Styles.dark_theme_toggle_btn}
+                onClick={() => {
+                    setTheme(theme === 'dark' ? 'light' : 'dark')
+                }}
+            >
             </div>
         </div>
     )
