@@ -19,8 +19,6 @@ export default function RootLayout({
 
     <html
       lang="en"
-      // className='light'
-      // style={{ colorScheme: 'light' }}
       suppressHydrationWarning //-> Not recommended to use mindlessly
     >
       <body className={inter.className}>
