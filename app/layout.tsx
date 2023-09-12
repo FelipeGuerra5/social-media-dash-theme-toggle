@@ -25,7 +25,9 @@ export default function RootLayout({
     >
       <body className={inter.className}>
         <Providers>
-          {children}
+          <div className='background_image'>
+            {children}
+          </div>
         </Providers>
       </body>
     </html>

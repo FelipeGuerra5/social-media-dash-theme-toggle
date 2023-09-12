@@ -1,5 +1,5 @@
 .main {
-    width: 80%;
+    width: 74%;
     height: 90%;
 }
 
@@ -11,7 +11,20 @@
     flex-wrap: wrap;
 }
 
+.nav_title {
+    color: var(--text-main);
+}
+
+.nav_legend {
+    color: var(--text-legend);
+    margin-top: 5px;
+    font-weight: bold;
+    font-size: small;
+}
+
 .followers_tiles_container {
+    margin-top: 30PX;
+    margin-bottom: 40PX;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -30,12 +43,11 @@
     padding: var(--tile-padding);
     margin-top: 5px;
     background-color: var(--card-background);
+    border-radius: 0px 0px 5px 5px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
-
-
 }
 
 /* TODO - Set the borders of the tiles to the right color */
@@ -105,7 +117,7 @@
 }
 
 .growing_arrow {
-    margin-right: 3px;
+    margin-right: 5px;
 }
 
 
@@ -125,8 +137,8 @@
     width: var(--tile-width);
     height: var(--overwiew-tile-height);
     margin: var(--tile-margin);
-    padding: var(--tile-padding);
-    background-color: var(--background-color);
+    padding: var(--overview_tile-padding);
+    background-color: var(--card-background);
     border-radius: 5px;
     display: flex;
     flex-direction: column;
@@ -141,6 +153,7 @@
 }
 
 .overview_tile h1 {
+    color: var(--text-legend);
     font-size: small;
     font-weight: 800;
 }
@@ -149,6 +162,7 @@
     width: 100%;
     font-size: 25px;
     font-weight: 900;
+    color: var(--text-main);
     display: flex;
     justify-content: space-between;
 }
@@ -156,7 +170,7 @@
 .overview_growing_up {
     font-weight: bolder;
     font-size: small;
-    color: green;
+    color: var(--lime-green);
     display: flex;
     align-items: flex-end;
 }
@@ -164,7 +178,7 @@
 .overview_growing_down {
     font-weight: bolder;
     font-size: small;
-    color: red;
+    color: var(--bright-red);
     display: flex;
     align-items: flex-end;
 }
@@ -183,6 +197,8 @@
     height: 20px;
     border-radius: 10px;
     padding: 1px;
+    margin-top: var(--tile-margin);
+    margin-bottom: var(--tile-margin);
     display: flex;
     align-items: center;
     background: linear-gradient(to right, hsl(210, 78%, 56%), hsl(146, 68%, 55%));
