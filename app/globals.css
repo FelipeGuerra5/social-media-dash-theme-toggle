@@ -59,7 +59,6 @@ html {
   justify-content: center;
   align-items: center;
   background-color: var(--background-color);
-  height: 200%;
 }
 
 .main {
